@@ -36,6 +36,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0px;
 }
 .nav-item{
     display: flex;
@@ -69,6 +70,9 @@ nav{
     justify-content: center;
     align-items: center;
 }
+.banner-img-container{
+    width: 40%;
+}
 .banner-container{
     height: 80%;
     display: flex;
@@ -81,7 +85,6 @@ nav{
     color: var(--title-color);
     font-size: 52px;
     font-weight: 700;
-    line-height: 70px;
 }
 
 .banner-text-content > p{
@@ -102,5 +105,67 @@ nav{
     margin-left: 10px;
 }
 .banner-img{
-    width: 40%;
+    width: 100%;
+}
+
+
+/* Responsive Design */
+
+/* For Mobile Devices */
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-main-container{
+        background-image: none;
+    }
+    .banner-img-container{
+        background-image: url('./images/Circle\ design.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 60%;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .banner-text-content{
+        width: 100%;
+        margin: auto;
+    }
+    .banner-text-content{
+        text-align: center;
+    }
+    .banner-text-content > h1{
+        font-size: 28px;
+    }
+    .banner-text-content > p{
+        width: 100%;
+        font-size: 14px;
+    }
+    .nav-item{
+        display: none;
+    }
+}
+
+/* For Tablet Devices */
+@media screen and (max-width:992px) {
+ header{
+    margin: 0px 50px;
+ }
+ .banner-main-container{
+    background-image: none;
+}
+ .banner-img-container{
+    background-image: url('./images/Circle\ design.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner-img{
+    width: 100%;
+}
 }
