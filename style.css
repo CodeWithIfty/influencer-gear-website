@@ -7,10 +7,11 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    max-width: 1440px;
-    margin: 0 auto;
+    /* max-width: 1440px; */
+    /* margin: 0 auto; */
     background-color: #FFF;
 }
+
 
 /* Default Color */
 
@@ -37,6 +38,8 @@ body{
 /* Navbar Styles */
 header{
     height: 725px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 nav{
     display: flex;
@@ -112,6 +115,10 @@ nav{
 }
 .banner-img{
     width: 100%;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* Sponsor Section Styles */
@@ -229,6 +236,29 @@ nav{
 .featured-text-content > button{
     margin-top: 12px;
     padding: 10px 25px;
+}
+
+/* Footer Section Styles */
+.footer-container{
+    width: 100%;
+    margin-top: 80px;
+    background: #0A0826;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-content{
+    text-align: center;
+}
+.footer-content h3{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 /* Responsive Design */
 
