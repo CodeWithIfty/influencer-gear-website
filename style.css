@@ -28,6 +28,12 @@ body{
     font-size: 16px;
     font-weight: 700;
 }
+.section-title{
+    text-align: center;
+    color: var(--title-color);
+    font-size: 28px;
+    font-weight: 600;
+}
 /* Navbar Styles */
 header{
     height: 725px;
@@ -130,7 +136,68 @@ nav{
    
 }
 
-
+/* Popular Collection Styles */
+#popularProduct{
+    margin: 50px 0px;
+}
+.product-container{
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.product-box{
+    width: 329px;
+    height: 476px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+ }
+ .product-content{
+    padding: 15px;
+ }
+ .product-title{
+    color: var(--title-color);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px; 
+ }
+ .product-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%; 
+ }
+ .product-short-desc{
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 143%; 
+    letter-spacing: 0.252px;
+    width: 70%;
+ }
+ .rating{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+ }
+ .rating i{
+    font-size: 10px;
+   color: #FB8200;
+   
+ }
+ .rating-icon{
+    margin-left: -30px;
+ }
+ .rating-text{
+    color: #5E6366;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    margin-left: -25px;
+ }
 /* Responsive Design */
 
 /* For Mobile Devices */
